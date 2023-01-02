@@ -1,0 +1,238 @@
+$primary-color: rgb(224, 224, 224);
+$secondary-color: rgb(22, 22, 22);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $secondary-color;
+    color: $primary-color;
+    font-weight: 100;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    letter-spacing: 0.05rem;
+    line-height: 1.8rem;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 0.8rem;
+    color: $primary-color;
+    background-color: $secondary-color;
+    letter-spacing: 0.05rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input {
+    border: 2px solid $primary-color;
+    padding-left: 0.35rem;
+    font-size: 1.4rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.navBarClass {
+    overflow-x: hidden;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    font-size: 1.15rem;
+    padding-top: 10px;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 10px;
+    ul {
+        margin: auto;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        li {
+            float: left;
+        }
+        li:hover {
+            filter: brightness(70%);
+            transform: translateY(5px);
+        }
+    }
+}
+
+button {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    filter: brightness(70%);
+}
+
+button:active {
+    background-color: #af4c4c;
+}
+
+button:disabled {
+    filter:brightness(40%);
+}
+
+.headerClass {
+    width: auto;
+    height: auto;
+    text-align: center;
+    h4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    a {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 1.35rem;
+        border: 2px solid $primary-color;
+        padding: 10px 20px;
+    }
+    a:hover {
+        filter: brightness(70%);
+    }
+}
+
+.searchClass {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 220px;
+    
+    .errorInputClass {
+        color: rgb(231, 59, 59);
+        margin-top: 20px;
+    }
+
+    .insertButtonClass,
+    .updateButtonClass,
+    .deleteButtonClass {
+        margin: 15px 20px;
+    }
+
+    .insertFormClass,
+    .updateFormClass {
+        line-height: 2.5rem;
+        font-size: 1.25rem;
+        margin: 0 20%;
+        .leftCol {
+            float: left;
+        }
+        .rightCol {
+            float: right;
+        }
+    }
+
+    .employeeTableClass {
+        margin-bottom: 100px;
+    }
+}
+
+form {
+    font-size: 1.4rem;
+    overflow: hidden;
+    label {
+        margin-right: 30px;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 0.7rem;
+    margin: 30px 0;
+    overflow-x: hidden;
+    th, td, tr {
+        padding-left: 14px;
+        padding-right: 14px;
+        border: 1px solid rgb(223, 223, 223);
+    }
+    tr:nth-child(1) {
+        background-color: #6464643d;
+    }
+    tr:nth-child(odd) {
+        background-color: #49494952;
+    }
+    tr:nth-child(even) {
+        background-color: #49494996;
+    }
+}
+
+.payrollClass {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 220px;
+
+    .buttonWrapper {
+        .payrollButtons {
+            font-size: 0.7rem;
+            margin: 10px;
+        }
+    }
+    .payrollTableClass {
+        margin-bottom: 100px;
+        width: 90%;
+        transform: translate(5%, 0);
+    }
+}
+
+.jobsClass {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 220px;
+    .jobsTableClass {
+        margin-bottom: 100px;
+        width: 90%;
+        transform: translate(5%, 0);
+    }
+}
